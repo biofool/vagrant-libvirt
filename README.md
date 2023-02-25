@@ -103,6 +103,9 @@ To work on the `vagrant-libvirt` plugin, clone this repository out, and use
 
 ```shell
 git clone https://github.com/vagrant-libvirt/vagrant-libvirt.git
+# Don't use the snap package it fails
+sudo apt  install ruby-bundler
+gem install bcrypt_pbkdf
 cd vagrant-libvirt
 bundle config --local with development
 bundle config --local path 'vendor/bundle'
